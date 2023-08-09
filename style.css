@@ -702,43 +702,46 @@ height: 450px;
   .home-content .sales-boxes .top-sales{
     margin: 0;
   }
+  .sidebar .logo-details img{
+    position: absolute;
+  }
+  .sidebar .logo-details .logo_name{
+    /* position: absolute; */
+    display: none;
+    transition: all 0.4s ease
+    /* display: none; */
+  }
+  .sidebar.active .logo-details .logo_name{
+    color: yellow;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    margin-left: 55px;
+  }
+  .home-content .sales-boxes .recent-sales{
+    width: 425px;
+    height: 425px;
+    overflow-x: scroll;
+  }
+  .home-content .sales-boxes .top-sales{
+    width: 90%;
+    margin-left: 20px;
+  }
+  .home-content .bar{
+    width: 90%;
+  }
+  .home-section .home-content .bar .BarChart canvas{
+    min-height: 190px;
+  }
+  .home-content .tasks{
+    min-width: 90%;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
 }
-.sidebar .logo-details img{
-  position: absolute;
-}
-.sidebar .logo-details .logo_name{
-  /* position: absolute; */
-  display: none;
-  transition: all 0.4s ease
-  /* display: none; */
-}
-.sidebar.active .logo-details .logo_name{
-  color: yellow;
-  font-size: 24px;
-  font-weight: 500;
-  display: flex;
-  margin-left: 55px;
-}
-.home-content .sales-boxes .recent-sales{
-  width: 425px;
-  height: 425px;
-  overflow-x: scroll;
-}
-.home-content .sales-boxes .top-sales{
-  width: 90%;
-  margin-left: 20px;
-}
-.home-content .bar{
-  width: 90%;
-}
-.home-section .home-content .bar .BarChart canvas{
-  min-height: 190px;
-}
-.home-content .tasks{
-  min-width: 90%;
-  margin-left: 20px;
-  margin-top: 20px;
-}
+
+
 
 @media (max-width: 1000px) {
   .overview-boxes .box{
