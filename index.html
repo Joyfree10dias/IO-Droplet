@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <img src="Doge.webp" alt="avatar"> 
+      <span class="logo_name">Joyfree Dias</span>
+    </div>
+      <ul class="nav-links">
+        <!-- <div class="nav-links"> -->
+
+        <li>
+          <!-- <div class="drop-down"> -->
+          <a href="#" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">DASHBOARD</span>
+          </a>
+          <!-- </div> -->
+        </li>
+        <li>
+          <!-- <div class="drop-down"> -->
+            <a href="#" onclick="toggleCollapsible(this)">
+              <i class='bx bx-cube'></i>
+              <span class="links_name">COMPONENTS</span>
+              <i class='bx bx-chevron-down chev'></i>
+            </a>
+            <div class="collapsible-content">
+              <a href="#"><b>B</b><span>Button</span></a>
+              <a href="#"><b>G</b><span>Grid System</span></a>
+              <a href="#"><b>P</b><span>Panels</span></a>
+              <a href="#"><b>N</b><span>Notifications</span></a>
+              <a href="#"><b>I</b><span>Icons</span></a>
+              <a href="#"><b>T</b><span>Typograpghy</span></a>
+            </div>
+          <!-- </div> -->
+        </li>
+        <li>
+          <!-- <div class="drop-down"> -->
+          <a href="#" onclick="toggleCollapsible(this)">
+            <i class='bx bx-clipboard'></i>
+            <span class="links_name">FORMS</span>
+            <i class='bx bx-chevron-down chev'></i>
+          </a>
+          <div class="collapsible-content">
+            <a href="#"><b>R</b><span>Regular Forms</span></a>
+            <a href="#"><b>E</b><span>Extended Forms</span></a>
+            <a href="#"><b>V</b><span>Validation Forms</span></a>
+            <a href="#"><b>W</b><span>Wizard</span></a>
+          </div>
+          <!-- </div> -->
+        </li>
+        <li>
+          <!-- <div class="drop-down"> -->
+          <a href="#" onclick="toggleCollapsible(this)">
+            <i class='bx bx-table'></i>
+            <span class="links_name">TABLES</span>
+            <i class='bx bx-chevron-down chev'></i>
+          </a>
+          <div class="collapsible-content">
+            <a href="#"><b>R</b><span>Regular Tables</span></a>
+            <a href="#"><b>E</b><span>Extended Tables</span></a>
+            <a href="#"><b>P</b><span>Paginated Tables</span></a>
+          </div>
+          <!-- </div> -->
+        </li>
+        <li>
+          <!-- <div class="drop-down"> -->
+          <a href="#" onclick="toggleCollapsible(this)">
+            <i class='bx bx-map'></i>
+            <span class="links_name">MAPS</span>
+            <i class='bx bx-chevron-down chev'></i>
+          </a>
+          <div class="collapsible-content">
+            <a href="#"><b>G</b><span>Google Maps</span></a>
+            <a href="#"><b>F</b><span>Full Screen Maps</span></a>
+            <a href="#"><b>V</b><span>Vector Maps</span></a>
+          </div>
+          <!-- </div> -->
+        </li>
+        <li>
+          <!-- <div class="drop-down"> -->
+          <a href="#">
+            <i class='bx bxs-bar-chart-alt-2'></i>
+            <span class="links_name">CHARTS</span>
+          </a>
+          <!-- </div> -->
+        </li>
+        <li>
+          <!-- <div class="drop-down"> -->
+          <a href="#">
+            <i class='bx bx-calendar' ></i>
+            <span class="links_name">CALENDER</span>
+          </a>
+          <!-- </div> -->
+        </li>
+        <li>
+          <!-- <div class="drop-down"> -->
+          <a href="#" onclick="toggleCollapsible(this)">
+            <i class='bx bx-book-content'></i>
+            <span class="links_name">PAGES</span>
+            <i class='bx bx-chevron-down chev'></i>
+          </a>
+          <div class="collapsible-content">
+            <a href="#"><b>U</b><span>User Page</span></a>
+            <a href="#"><b>L</b><span>Login Page</span></a>
+            <a href="#"><b>R</b><span>Register</span></a>
+          </div>
+          <!-- </div> -->
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Overview</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="sidebar-new">
+        <i class='bx bx-planet sidebarBtn'></i>
+        <i class='bx bxs-down-arrow drp-arrow'></i>
+        <div class="dropdown-content">
+            <a href="#">Create New Post</a>
+            <a href="#">Manage Something</a>
+            <a href="#">Do Nothing</a>
+            <hr>
+            <a href="#">Submit to Live</a>
+          </div>
+      </div>
+      <div class="sidebar-notifications">
+        <i class='bx bxs-bell sidebarBtn' ></i>
+        <i class='bx bxs-down-arrow drp-arrow'></i>
+        <div class="dropdown-content">
+            <a href="#">Notifications 1</a>
+            <a href="#">Notifications 2</a>
+            <a href="#">Notifications 3</a>
+          </div>
+      </div>
+      <div class="sidebar-bullets">
+        <i class='bx bx-dots-vertical-rounded sidebarBtn'></i>
+        <div class="dropdown-content">
+            <a href="#"><i class='bx bxs-envelope' ></i><span>Messages</span></a>
+            <a href="#"><i class='bx bx-help-circle' ></i><span>Help Center</span></a>
+            <a href="#"><i class='bx bx-cog' ></i><span>Settings</span></a>
+            <hr>
+            <a href="#"><i class='bx bx-lock'></i><span>Lock Screen</span></a>
+            <a href="#"><i class='bx bx-power-off' ></i><span>Log Out</span></a>
+          </div>
+      </div>
+    </nav>
+
+     <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total sales</div>
+            <div class="number">40,876</div>
+            <div class="indicator">
+              <i class='bx bx-refresh'></i>
+              <span class="text">Updated now</span>
+            </div>
+          </div>
+          <i class='bx bx-cart-alt cart'></i>        
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Errors</div>
+            <div class="number">38</div>
+            <div class="indicator">
+              <i class='bx bx-stopwatch'></i>
+              <span class="text">Last date</span>
+            </div>
+          </div>
+          <i class='bx bxs-error cart two'></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Revenue</div>
+            <div class="number">$12,876</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">Last day</span>
+            </div>
+          </div>
+          <i class='bx bx-cart cart three' ></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Followers</div>
+            <div class="number">11,086</div>
+            <div class="indicator">
+              <i class='bx bx-refresh'></i>
+              <span class="text">Updated now</span>
+            </div>
+          </div>
+          <i class='bx bx-heart cart four'></i>
+        </div>
+      </div> 
+      <i class="nc-icon nc-chart text-warning"></i>
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Email Statistics</div>
+          <div class="emailBottom">Last Campaign Performance</div>
+          <div class="PieChart" style="width: 330px;height: 330px;padding-bottom: 5px;">
+          <canvas id="myChart" ></canvas>
+        </div>
+        <hr>
+        <div class="PiechartHr"><i class='bx bxs-time'></i><span>Campaign sent 2 days ago</span></div>
+        </div>
+         <div class="top-sales box">
+          <div class="title">Users Behaviour</div>
+          <div class="emailBottom">24 Hours performance</div>
+          <div class="LineChart" style="width: 600px;height: 330px;padding-bottom: 5px;">
+            <canvas id="myChart2" ></canvas>
+          </div>
+          <hr>
+          <div class="LinechartHr"><i class='bx bx-refresh' ></i><span>Updated 3 minutes ago</span></div>
+      </div>
+      
+    </div> 
+    <br>
+    <div class="Second" style="display: flex; justify-content: space-between;">
+    <div class="bar">
+      <div class="title">Sales</div>
+      <div class="emailBottom">All products including taxes</div>
+      <div class="BarChart" style="padding-bottom: 5px;">
+        <canvas id="myChart3" ></canvas>
+      </div>
+      <hr>
+      <div class="BarchartHr"><i class='bx bx-check-double' ></i><span>Data information certified</span></div>
+  </div>
+  <div class="tasks">
+    <div class="title">Tasks</div>
+    <div class="emailBottom" style="margin-bottom: 8px;">Backend devlopment</div>
+    <hr>
+    <ul id="myUL">
+      <li  class="myLI">Hit the gym</li>
+      <li class="checked myLI">Pay bills</li>
+      <li class="myLI">Meet George</li>
+      <li class="myLI">Buy eggs</li>
+      <li class="myLI">Read a book</li>
+      <li class="myLI">Organize office</li>
+    </ul>
+    <hr>
+    <div class="TasksHr"><i class='bx bx-refresh' ></i><span>Updated 2 minutes ago</span></div>
+</div>
+<!-- </div> -->
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="graph.js"></script>
+  <script>
+
+    // drop down 
+    function toggleCollapsible(link) {
+      console.log('link:',link)
+      var parent = link.parentNode;
+      var content = link.nextElementSibling;
+      // console.log('parent:',parent)
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        link.lastElementChild.classList.replace("bx-chevron-up","bx-chevron-down")
+      } else {
+        content.style.display = "block";
+        parent.style.position = "relative"
+        link.lastElementChild.classList.replace("bx-chevron-down","bx-chevron-up")
+      }
+    }
+
+    // sidebar
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByClassName("myLI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+// Add a "checked" symbol when clicking on a list item
+// var list = document.querySelector('ul');
+var list = document.getElementById('myUL');
+list.addEventListener('click', function(ev) {
+  if (ev.target.className === 'myLI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+ </script>
+
+</body>
+</html>
