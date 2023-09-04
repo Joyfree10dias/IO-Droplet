@@ -12,12 +12,27 @@
   <div class="sidebar">
     <div class="logo-details">
       <img src="Doge.webp" alt="avatar"> 
-      <span class="logo_name">Joyfree Dias</span>
+      <span class="logo_name">VUE JS</span>
     </div>
       <ul class="nav-links">
         <!-- <div class="nav-links"> -->
 
-        <li>
+          <li>
+            <!-- <div class="drop-down"> -->
+              <a href="#" onclick="toggleCollapsible(this)">
+                <i class='bx bxs-contact'></i>
+                <span class="links_name">Joyfree Dias</span>
+                <i class='bx bx-chevron-down chev'></i>
+              </a>
+              <div class="collapsible-content">
+                <a href="#"><b>MP</b><span>My Profile</span></a>
+                <a href="#"><b>ED</b><span>Edit Details</span></a>
+                <a href="#"><b>S</b><span>Settings</span></a>
+              </div>
+            <!-- </div> -->
+          </li>
+          <hr style="border:1px solid yellow; ">
+        <li style="margin-top: 10px;">
           <!-- <div class="drop-down"> -->
           <a href="#" class="active">
             <i class='bx bx-grid-alt' ></i>
@@ -212,7 +227,7 @@
         <div class="recent-sales box">
           <div class="title">Email Statistics</div>
           <div class="emailBottom">Last Campaign Performance</div>
-          <div class="PieChart" style="width: 330px;height: 330px;padding-bottom: 5px;">
+          <div class="PieChart" style="width: 100%;height: 330px;padding-bottom: 5px;display: flex;justify-content: center;">
           <canvas id="myChart" ></canvas>
         </div>
         <hr>
@@ -221,8 +236,8 @@
          <div class="top-sales box">
           <div class="title">Users Behaviour</div>
           <div class="emailBottom">24 Hours performance</div>
-          <div class="LineChart" style="width: 600px;height: 330px;padding-bottom: 5px;">
-            <canvas id="myChart2" ></canvas>
+          <div class="LineChart" style="width: 100%;height: 330px;padding-bottom: 5px;display: flex;justify-content: center;">
+            <canvas id="myChart2" style="width:100%;" ></canvas>
           </div>
           <hr>
           <div class="LinechartHr"><i class='bx bx-refresh' ></i><span>Updated 3 minutes ago</span></div>
@@ -234,7 +249,7 @@
     <div class="bar">
       <div class="title">Sales</div>
       <div class="emailBottom">All products including taxes</div>
-      <div class="BarChart" style="padding-bottom: 5px;">
+      <div class="BarChart" style="padding-bottom: 5px; display: flex;justify-content: center;">
         <canvas id="myChart3" ></canvas>
       </div>
       <hr>
